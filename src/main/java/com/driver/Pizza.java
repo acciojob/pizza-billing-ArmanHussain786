@@ -16,10 +16,10 @@ public class Pizza {
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
-        isExtracheeseAdded=false;
-        isExtratoppingsAdded=false;
-        isTakeawayAdded=false;
-        isBillGenerated=false;
+        this.isExtracheeseAdded=false;
+        this.isExtratoppingsAdded=false;
+        this.isTakeawayAdded=false;
+        this.isBillGenerated=false;
         this.bill="";
         // your code goes here
         if(isVeg)
@@ -84,10 +84,10 @@ public class Pizza {
             }
             if(isTakeawayAdded)
             {
-                this.bill += "Paperbag Added: "+20+"\n";
+                this.bill += "Paperbag Added: "+"20"+"\n";
             }
 
-            this.bill +="Total Price: "+this.price+"\n";
+            this.bill +="Total Price: "+this.price + "\n";
 
         }
         return this.bill;
